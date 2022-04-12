@@ -7,7 +7,9 @@ public class Series {
                 result+=(int)Math.pow(2, j)*b;
             }
         count++;
-        System.out.print(result+",");
+        if(i+1!=n)
+            System.out.print(result+",");
+        else System.out.print(result);
         result=0;
         }
     }
