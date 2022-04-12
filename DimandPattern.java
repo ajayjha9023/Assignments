@@ -1,29 +1,24 @@
 public class DimandPattern {
     public static void main(String[] args) {
-        int max=2,count=0;;
         for(int i=0;i<5;i++){
-            for(int j=0;j<5-i;j++){
+            for(int j=0;j<5-1-i;j++){
                 System.out.print(" ");
             }
-            if(i==0){
-                System.out.println("*");
-                continue;
-            }
-            for(int j=0;j<5;j++){
-                if(count<max)
+            for(int j=0;j<=i*2;j++){
+                if(j==0||j==i*2)
                 System.out.print("*");
-                count++;
+                else System.out.print(" ");
             }
             System.out.println("");
         }
         for(int i=0;i<4;i++){
-            if(i==3){
-
-                System.out.println("*");
-                break;
+            for(int j=0;j<=i;j++){
+                System.out.print(" ");
             }
-            for(int j=0;j<2;j++){
+            for(int j=0;j<=(3-i)*2;j++){
+                if(j==0||j==(3-i)*2)
                 System.out.print("*");
+                else System.out.print(" ");
             }
             System.out.println("");
         }
